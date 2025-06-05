@@ -17,7 +17,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-MODEL_PATH = r"E:\btc\Models\effnet.keras"
+# MODEL_PATH = r"E:\btc\Models\effnet.keras"
+MODEL_PATH = "./Models/effnet.keras"
 CLASS_NAMES=['glioma_tumor','no_tumor','meningioma_tumor','pituitary_tumor']
 
 MODEL=tf.keras.models.load_model(MODEL_PATH)
