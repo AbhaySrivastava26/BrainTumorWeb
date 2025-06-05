@@ -122,7 +122,7 @@ function handleFile(file) {
   const formData = new FormData();
   formData.append('file', file);
 
-  fetch('http://localhost:8000/predict', {
+  fetch('https://brain-tumor-api-vgwm.onrender.com/predict', {
     method: 'POST',
     body: formData,
   })
